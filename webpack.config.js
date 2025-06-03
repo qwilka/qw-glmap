@@ -2,7 +2,7 @@ const path = require('path');
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: './wglmap/index.js',
+  entry: './glmap/index.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'build'),
@@ -18,7 +18,7 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: "./wglmap/index.html", to: "index.html" },
+        { from: "./glmap/index.html", to: "index.html" },
         { from: "./data/favicon.ico", to: "favicon.ico" },
       ],
     }),
